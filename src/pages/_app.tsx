@@ -1,22 +1,22 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import React from 'react'
+import { Footer } from '../components/Footer'
+import NabarApp from '../components/Navbar'
+import { theme } from '../styles/theme'
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Head>
-        {/* <title>3exitus Marketing Digital</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
-        <link rel="manifest" href="/manifest.json" /> */}
-        <meta name="theme-color" content="#06092B" />
-        <meta
-          name="description"
-          content="3xitus Marketing Digital, uma empresa que prestadora de serviços na área digital."
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet"/>
+
       </Head>
+      <NabarApp />
       <Component {...pageProps} />
+      <Footer />
     </ChakraProvider>
   )
 }
