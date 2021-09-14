@@ -36,7 +36,7 @@ export const SubscribeForm = (props: HTMLChakraProps<'form'>) => {
             flexShrink={0}
             width={{ base: 'full', md: 'auto' }}
           >
-            Subscriva-se
+            Inscrever-se
           </Button>
         </Stack>
       </Stack>
