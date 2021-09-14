@@ -18,6 +18,10 @@ export const theme = extendTheme({
         heading: 'Poppins',
         body: 'Poppins'
     },
+
+    color: {
+        'purple.600': '#5c0099'
+    },
     styles: {
         global: {
             _focus:{shadow: false},

@@ -5,11 +5,12 @@ import {
     Box,
     Flex,
     useColorModeValue,
-    VisuallyHidden,
+    // VisuallyHidden,
     HStack,
     Button,
     useDisclosure,
     VStack,
+    Stack,
     IconButton,
     CloseButton,
 } from "@chakra-ui/react";
@@ -23,6 +24,8 @@ export default function NabarApp() {
     const mobileNav = useDisclosure();
 
     return (
+        <Box as="header" mx="auto">
+            <Stack spacing="10">
         <React.Fragment>
             <chakra.header
                 bg={bg}
@@ -30,6 +33,7 @@ export default function NabarApp() {
                 px={{ base: 2, sm: 4 }}
                 py={1}
                 shadow="md"
+                mx="auto"
             >
                 <Flex
                     alignItems="center"
@@ -39,16 +43,16 @@ export default function NabarApp() {
                     <Flex>
                         <chakra.a
                             href="/"
-                            title="Choc Home Page"
+                            title="3exitus"
                             display="flex"
                             alignItems="center"
                         >
                             <Logo />
-                            <VisuallyHidden>Choc</VisuallyHidden>
+                            {/* <VisuallyHidden>3exitus</VisuallyHidden> */}
                         </chakra.a>
-                        {/* <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-                            Choc
-                        </chakra.h1> */}
+                        <chakra.h1 fontSize="xl" fontWeight="medium">
+                            3exitus
+                        </chakra.h1>
                     </Flex>
                     <HStack display="flex" alignItems="center" spacing={1}>
                         <HStack
@@ -57,14 +61,14 @@ export default function NabarApp() {
                             color="brand.500"
                             display={{ base: "none", md: "inline-flex" }}
                         >
-                            <Button variant="ghost">
+                            <Button fontWeight='500' variant="ghost">
                                 <Link href="/">Home</Link>
                             </Button>
-                            <Button variant="ghost">
+                            <Button fontWeight='500' variant="ghost">
                                 <Link href="/about">Sobre Nós</Link>
                             </Button>
-                            <Button variant="ghost">Blog</Button>
-                            <Button variant="ghost">Contactos</Button>
+                            <Button fontWeight='500' variant="ghost">Blog</Button>
+                            <Button fontWeight='500' variant="ghost">Contactos</Button>
                         </HStack>
                         {/* <Button colorScheme="brand" size="sm">
                             Get Started
@@ -101,16 +105,16 @@ export default function NabarApp() {
                                     onClick={mobileNav.onClose}
                                 />
 
-                                <Button w="full" variant="ghost">
+                                <Button w="full" fontWeight='500' variant="ghost">
                                     <Link href="/">Home</Link>
                                 </Button>
-                                <Button w="full" variant="ghost">
+                                <Button w="full" fontWeight='500' variant="ghost">
                                 <Link href="/about">Sobre Nós</Link>
                                 </Button>
-                                <Button w="full" variant="ghost">
+                                <Button w="full" fontWeight='500' variant="ghost">
                                     <Link href="/blog">Blog</Link>
                                 </Button>
-                                <Button w="full" variant="ghost">
+                                <Button w="full" fontWeight='500' variant="ghost">
                                     Contactos
                                 </Button>
                             </VStack>
@@ -119,5 +123,7 @@ export default function NabarApp() {
                 </Flex>
             </chakra.header>
         </React.Fragment>
+        </Stack>
+        </Box>
     );
 }
