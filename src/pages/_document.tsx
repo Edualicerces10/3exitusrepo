@@ -14,14 +14,14 @@ import ColorTheme from '../styles/ColorTheme'
         <Html lang="pt-PT">
           <Head>
             {/* <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="%PUBLIC_URL%/3exitus.png" /> */}
+            <link rel="icon" href="%PUBLIC_URL%/3exitus.png" />
             <link rel="apple-touch-icon" href="/img/3exitus.png" />
             <link rel="shortcut icon" href="/img/3exitus.png" />
             <meta name="theme-color" content="#06092B" />
             <meta
             name="description"
             content="3exitus Marketing Digital, uma empresa que prestadora de serviços na área digital."
-            />
+            /> */}
           </Head>
           <body>
           <ColorModeScript initialColorMode={ColorTheme.config.initialColorMode} />
