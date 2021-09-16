@@ -19,7 +19,7 @@ export const SubscribeForm = (props: HTMLChakraProps<'form'>) => {
         <Stack spacing="4" direction={{ base: 'column', md: 'row' }}>
           <Input
             bg={useColorModeValue('white', 'inherit')}
-            placeholder="Insira o seu melhor email"
+            placeholder="Insira o seu email"
             type="email"
             required
             focusBorderColor={useColorModeValue('blue.500', 'blue.300')}
