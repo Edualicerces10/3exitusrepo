@@ -1,4 +1,6 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Divider } from "@chakra-ui/react";
+import React from "react";
+import DividerSections from "../components/DividerSections";
 import HeroSection  from "../components/Hero";
 
 
