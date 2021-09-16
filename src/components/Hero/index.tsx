@@ -8,9 +8,12 @@ import {
     Text,
   } from '@chakra-ui/react';
 import BudgetButton from '../BadgetButton';
+import DividerSections from '../DividerSections';
 
   export default function HeroSection() {
     return (
+        <>
+            
       <Stack minH={'80vh'} direction={{ base: 'column', md: 'row' }}>
         <Flex align={'center'} justify={'center'}>
           <Stack spacing={6} maxW={'lg'}>
@@ -42,5 +45,7 @@ import BudgetButton from '../BadgetButton';
           />
         </Flex>
       </Stack>
+        <DividerSections />
+        </>
     );
   }
