@@ -20,7 +20,18 @@ export const theme = extendTheme({
     },
 
     color: {
-        'purple.600': '#5c0099'
+        'purple.600': '#5c0099',
+        'purple.50': '#FAF5FF',
+        'purple.100': '#E9D8FD',
+        'purple.200': '#D6BCFA',
+        'purple.300': '#B794F4',
+        'purple.400': '#9F7AEA',
+        'purple.500': '#805AD5',
+        // 'purple.600': '#6B46C1',
+        'purple.700': '#553C9A',
+        'purple.800': '#44337A',
+        'purple.900': '#322659',
+        
     },
     styles: {
         global: {
