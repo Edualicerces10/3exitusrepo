@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from 'react'
 import { Heading, useColorModeValue } from '@chakra-ui/react'
 
 export const ServiceHeading = ({ children }: { children: ReactNode }) => {
@@ -10,5 +10,5 @@ export const ServiceHeading = ({ children }: { children: ReactNode }) => {
       >
         {children}
       </Heading>
-    );
-  };
+    )
+  }

@@ -1,4 +1,4 @@
-import { ReactNode } from 'React'
+import { ReactNode } from 'react'
 import { Stack, useColorModeValue } from '@chakra-ui/react'
 
 export const ServiceContent = ({ children }: { children: ReactNode }) => {

@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Stack, Heading, Text } from "@chakra-ui/react"
 
 interface TitleProps {
