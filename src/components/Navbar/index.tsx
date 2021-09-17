@@ -17,6 +17,7 @@ import {
 import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "../Logo";
 import { ColorModeSwitcher } from "../ButtonColorModeSwitch";
+import { LinkButton } from "./Button";
 // import { Logo } from "@choc-ui/logo";
 
 export default function NabarApp() {
@@ -41,15 +42,16 @@ export default function NabarApp() {
                                 mx="auto"
                             >
                                 <Flex>
+                                    <Link href="/" passHref>
                                     <chakra.a
-                                        href="/"
                                         title="3exitus"
                                         display="flex"
                                         alignItems="center"
                                     >
-                                        <Logo />
+                                            <Logo />
                                         {/* <VisuallyHidden>3exitus</VisuallyHidden> */}
                                     </chakra.a>
+                                    </Link>
                                     <chakra.h1
                                         fontSize="xl"
                                         fontWeight="medium"
@@ -71,30 +73,10 @@ export default function NabarApp() {
                                             md: "inline-flex",
                                         }}
                                     >
-                                        <Button
-                                            fontWeight="500"
-                                            variant="ghost"
-                                        >
-                                            <Link href="/">Home</Link>
-                                        </Button>
-                                        <Button
-                                            fontWeight="500"
-                                            variant="ghost"
-                                        >
-                                            <Link href="/about">Sobre Nós</Link>
-                                        </Button>
-                                        <Button
-                                            fontWeight="500"
-                                            variant="ghost"
-                                        >
-                                            Blog
-                                        </Button>
-                                        <Button
-                                            fontWeight="500"
-                                            variant="ghost"
-                                        >
-                                            Contactos
-                                        </Button>
+                                        <LinkButton href="/" >Home</LinkButton>
+                                        <LinkButton href="/about" >Sobre Nós</LinkButton>
+                                        <LinkButton href="/bolg" >Blog</LinkButton>
+                                        <LinkButton href="/contactus" >Contactos</LinkButton>
                                     </HStack>
                                     {/* <Button colorScheme="brand" size="sm">
                             Get Started
@@ -146,36 +128,10 @@ export default function NabarApp() {
                                                 onClick={mobileNav.onClose}
                                             />
 
-                                            <Button
-                                                w="full"
-                                                fontWeight="500"
-                                                variant="ghost"
-                                            >
-                                                <Link href="/">Home</Link>
-                                            </Button>
-                                            <Button
-                                                w="full"
-                                                fontWeight="500"
-                                                variant="ghost"
-                                            >
-                                                <Link href="/about">
-                                                    Sobre Nós
-                                                </Link>
-                                            </Button>
-                                            <Button
-                                                w="full"
-                                                fontWeight="500"
-                                                variant="ghost"
-                                            >
-                                                <Link href="/blog">Blog</Link>
-                                            </Button>
-                                            <Button
-                                                w="full"
-                                                fontWeight="500"
-                                                variant="ghost"
-                                            >
-                                                Contactos
-                                            </Button>
+                                            <LinkButton href="/" >Home</LinkButton>
+                                            <LinkButton href="/about" >Sobre Nós</LinkButton>
+                                            <LinkButton href="/bolg" >Blog</LinkButton>
+                                            <LinkButton href="/contactus" >Contactos</LinkButton>
                                         </VStack>
                                     </Box>
                                 </HStack>
