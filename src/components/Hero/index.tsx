@@ -1,6 +1,10 @@
 import ImageHero from '../../../public/img/marketlaunch.svg'
+
+import HeroBackground from '../../../public/img/wave.svg'
+
 import Image from 'next/image'
 import {
+    Box,
     Button,
     Flex,
     Heading,
@@ -12,9 +16,19 @@ import DividerSections from '../DividerSections';
 
   export default function HeroSection() {
     return (
-        <>
+        <Box
+        >
             
-      <Stack minH={'80vh'} direction={{ base: 'column', md: 'row' }}>
+      <Stack 
+        // minH={'80vh'}
+        direction={{ base: 'column', md: 'row' }}
+
+        bgImage="url('/img/wave.svg')"
+        backgroundPosition="bottom"
+        backgroundRepeat="no-repeat"
+
+        minHeight="90vh" px={{ base: '4', md: '8' }}
+      >
         <Flex align={'center'} justify={'center'}>
           <Stack spacing={6} maxW={'lg'}>
           <Text mb='12' fontSize="2xl"> 👋 Olá, seja bem-vindo</Text>
@@ -22,12 +36,13 @@ import DividerSections from '../DividerSections';
               <Text
                 fontWeight='normal'
                 as={'span'}
-                position={'relative'}>
+                // position={'relative'}
+                >
                 Sua empresa de
                 Marketing Digital
               </Text>
             </Heading>
-            <Text fontSize={{ base: 'md', lg: 'lg' }}>
+            <Text InactiveBorder fontSize={{ base: 'md', lg: 'lg' }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Pariatur odio vel obcaecati minima animi quis labore 
               facere rem repudiandae quibusdam.
@@ -40,12 +55,12 @@ import DividerSections from '../DividerSections';
         <Flex flex={1}>
           <Image
             alt={'Login Image'}
-            objectFit={'cover'}
+            objectFit={'fill'}
             src={ImageHero}
           />
         </Flex>
       </Stack>
         <DividerSections />
-        </>
+        </Box>
     );
   }
