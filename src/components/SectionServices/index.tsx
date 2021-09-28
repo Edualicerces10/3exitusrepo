@@ -14,14 +14,29 @@ import { ServiceImage } from './ServiceImage';
 
 export default function SectionServices() {
   return (
-    <>
+    <Box
+    // bgImage="url('/img/blob.svg')" 
+    // backgroundRepeat="no-repeat"
+    // bgPosition="center"
+    >
     {/* bg={useColorModeValue('gray.100', 'gray.700')} */}
-    <Box>
-      <Container maxW={'7xl'} py={2} as={Stack} spacing={12}>
+    <Box
+      minHeight="90vh"
+      px={{base: '4', md:'8'}}
+      py={2}
+      as={Stack}
+      spacing={12}
+
+      backgroundPosition="bottom"
+      backgroundRepeat="no-repeat"
+      bgImage="url('/img/blobBottom.svg')"      
+      >
+      {/* <Container maxW={'7xl'} py={2} as={Stack} spacing={12}> */}
         <ServiceTitle heading={'Somos especializados em'} text="" />
         <Stack
           direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
+          spacing={{ base: 10, md: 4, lg: 10 }}
+        >
             <Service>
             <ServiceContent>
               <ServiceHeading>Marketing Digital</ServiceHeading>
@@ -53,9 +68,9 @@ export default function SectionServices() {
             </ServiceContent>
           </Service>
         </Stack>
-      </Container>
+      {/* </Container> */}
     </Box>
     <DividerSections />
-    </>
+    </Box>
   );
 }

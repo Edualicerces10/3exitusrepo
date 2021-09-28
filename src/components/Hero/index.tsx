@@ -1,11 +1,8 @@
 import ImageHero from '../../../public/img/marketlaunch.svg'
 
-import HeroBackground from '../../../public/img/wave.svg'
-
 import Image from 'next/image'
 import {
     Box,
-    Button,
     Flex,
     Heading,
     Stack,
@@ -13,6 +10,9 @@ import {
   } from '@chakra-ui/react';
 import BudgetButton from '../BadgetButton';
 import DividerSections from '../DividerSections';
+import { motion } from 'framer-motion';
+import { AnimationType } from 'framer-motion/types/render/utils/types';
+import { Presence } from 'framer-motion/types/components/AnimateSharedLayout/types';
 
   export default function HeroSection() {
     return (
@@ -31,7 +31,30 @@ import DividerSections from '../DividerSections';
       >
         <Flex align={'center'} justify={'center'}>
           <Stack spacing={6} maxW={'lg'}>
-          <Text mb='12' fontSize="2xl"> 👋 Olá, seja bem-vindo</Text>
+          <Text
+            mb='12'
+            fontSize="2xl"
+            display="flex"
+            justifyContent="flex-start"
+            >
+            <motion.a
+                // animate={{ rotate: 60 }}  
+                // transition={{ repeat: Infinity, duration: 20 }}
+
+                animate={{ rotate: 80 }}
+                transition={{
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                    duration: 0.9
+                }}
+
+                whileHover={{ scale: 1.2 }}
+                onHoverStart={e => {}}
+                onHoverEnd={e => {}}
+            >
+            👋
+            </motion.a>
+            Olá, seja bem-vindo</Text>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
               <Text
                 fontWeight='normal'
