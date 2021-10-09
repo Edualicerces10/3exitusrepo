@@ -25,7 +25,7 @@ export default function NabarApp() {
     const mobileNav = useDisclosure();
 
     return (
-        <Box role="contentheader" mx="auto" maxW="7xl" >
+        <Box role="contentheader" mx="auto">
             <Box as="header">
                 <Stack spacing="10">
                     <React.Fragment>
