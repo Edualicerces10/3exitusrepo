@@ -11,8 +11,6 @@ import {
 import BudgetButton from '../BadgetButton';
 import DividerSections from '../DividerSections';
 import { motion } from 'framer-motion';
-import { AnimationType } from 'framer-motion/types/render/utils/types';
-import { Presence } from 'framer-motion/types/components/AnimateSharedLayout/types';
 
   export default function HeroSection() {
     return (
@@ -27,7 +25,8 @@ import { Presence } from 'framer-motion/types/components/AnimateSharedLayout/typ
         backgroundPosition="bottom"
         backgroundRepeat="no-repeat"
 
-        minHeight="90vh" px={{ base: '4', md: '8' }}
+        minHeight="90vh"
+        px={{ base: '4', md: '8' }}
       >
         <Flex align={'center'} justify={'center'}>
           <Stack spacing={6} maxW={'lg'}>
@@ -38,9 +37,6 @@ import { Presence } from 'framer-motion/types/components/AnimateSharedLayout/typ
             justifyContent="flex-start"
             >
             <motion.a
-                // animate={{ rotate: 60 }}  
-                // transition={{ repeat: Infinity, duration: 20 }}
-
                 animate={{ rotate: 80 }}
                 transition={{
                     repeat: Infinity,
@@ -65,13 +61,13 @@ import { Presence } from 'framer-motion/types/components/AnimateSharedLayout/typ
                 Marketing Digital
               </Text>
             </Heading>
-            <Text InactiveBorder fontSize={{ base: 'md', lg: 'lg' }}>
+            <Text fontSize={{ base: 'md', lg: 'lg', md: 'md'}}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Pariatur odio vel obcaecati minima animi quis labore 
               facere rem repudiandae quibusdam.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-            <BudgetButton />
+                <BudgetButton />
             </Stack>
           </Stack>
         </Flex>
