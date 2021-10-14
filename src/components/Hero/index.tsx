@@ -14,8 +14,7 @@ import { motion } from 'framer-motion';
 
   export default function HeroSection() {
     return (
-        <Box
-        >
+        <Box>
             
       <Stack 
         // minH={'80vh'}
@@ -35,6 +34,8 @@ import { motion } from 'framer-motion';
             fontSize="2xl"
             display="flex"
             justifyContent="flex-start"
+            color="#6B46C1"
+            opacity="0.7"
             >
             <motion.a
                 animate={{ rotate: 80 }}
@@ -53,25 +54,30 @@ import { motion } from 'framer-motion';
             Olá, seja bem-vindo</Text>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
               <Text
-                fontWeight='normal'
+                fontWeight='500'
                 as={'span'}
                 // position={'relative'}
                 >
-                Sua empresa de
-                Marketing Digital
+                {/* Sua empresa de
+                Marketing Digital */}
+                Criamos sua <Text color="#6B46C1" opacity="0.7"> experiência Digital </Text>
               </Text>
             </Heading>
             <Text fontSize={{ base: 'md', lg: 'lg', md: 'md'}}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Pariatur odio vel obcaecati minima animi quis labore 
-              facere rem repudiandae quibusdam.
+            <Text
+              color="#6B46C1"
+              display="inline"
+              fontWeight='700'
+            >
+                3exitus
+            </Text> a empresa que vai ajudar você e sua empresa a elevar o seu negócio, dando um ar mais moderno e profissional, vamos ajudar você ganhar uma posição no mundo digital.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                 <BudgetButton />
             </Stack>
           </Stack>
         </Flex>
-        <Flex flex={1}>
+        <Flex>
           <Image
             alt={'Login Image'}
             objectFit={'fill'}
