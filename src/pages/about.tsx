@@ -1,5 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
+import SectionHistory from '../components/SectionHistory'
+import TestimonalSection from '../components/Testimonals'
 
 
 export default function About() {
@@ -9,7 +11,8 @@ export default function About() {
             <title>Sobre Nós | exitus</title>
         </Head>
         <Box as='div' minHeight="70vh" px={{ base: '4', md: '8' }}>
-            <span>Exemplo</span>
+            <SectionHistory />
+            <TestimonalSection />
         </Box> 
     </>
     )
