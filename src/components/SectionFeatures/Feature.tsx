@@ -10,8 +10,7 @@ interface FeatureProps {
 export const Feature = ({ title, text, icon }: FeatureProps) => {
     return (
         <Stack
-            my={5}
-            border='1px solid red'
+            px={{ base: '4', md: '8' }}
             rounded={'lg'}
         >
             <Flex
@@ -20,8 +19,8 @@ export const Feature = ({ title, text, icon }: FeatureProps) => {
                 display='flex'
                 align={"center"}
                 justify={"center"}
-                color={"white"}
                 rounded={"full"}
+                color={"purple.600"}
                 bg={"gray.100"}
             >
                 {icon}
@@ -29,7 +28,7 @@ export const Feature = ({ title, text, icon }: FeatureProps) => {
             <Text
               fontWeight={600}
             >{title}</Text>
-            <Text color={"gray.600"}>{text}</Text>
+            <Text>{text}</Text>
         </Stack>
     )
 }

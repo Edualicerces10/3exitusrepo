@@ -1,38 +1,36 @@
 
 import { Box, SimpleGrid, Icon } from "@chakra-ui/react"
-import { FcAssistant, FcDonate, FcInTransit } from "react-icons/fc"
+import { IoRocketSharp, IoDiamondSharp, IoEyeSharp } from "react-icons/io5"
 import DividerSections from "../DividerSections"
 import { Feature } from "./Feature"
-
-
 
 export default function SectionFeactures() {
     return (
     <>
     <Box 
         p={4} 
-        px={{ base: "4", md: "8" }}
+        px={{ base: "2", md: "6" }}
     >
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Feature
-                icon={<Icon as={FcAssistant} w={10} h={10} />}
-                title={"Lifetime Support"}
+                icon={<Icon as={IoRocketSharp} w={10} h={10} />}
+                title={"Missão"}
                 text={
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                    "Ser refefência no sector de prestação de serviços de Marketing Digital!"
                 }
             />
             <Feature
-                icon={<Icon as={FcDonate} w={10} h={10} />}
-                title={"Unlimited Donations"}
+                icon={<Icon as={IoEyeSharp} w={10} h={10} />}
+                title={"Visão"}
                 text={
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                    "Tornar o serviço de Marketing Digital uma ferramenta que geradora de riquezas para as empresas!"
                 }
             />
             <Feature
-                icon={<Icon as={FcInTransit} w={10} h={10} />}
-                title={"Instant Delivery"}
+                icon={<Icon as={IoDiamondSharp} w={10} h={10} />}
+                title={"Valores"}
                 text={
-                    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+                    "Foco no cliente, qualidade da resposta, eficiência, proatividade, ética e confidêncialidade!"
                 }
             />
         </SimpleGrid>
