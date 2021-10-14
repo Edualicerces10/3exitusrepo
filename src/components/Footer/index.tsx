@@ -7,7 +7,7 @@ import { SocialMediaLinks } from './SocialMediaLinks'
 import { SubscribeForm } from './SubscribeForm'
 
 export const Footer = () => (
-  <Box as="footer" role="contentinfo" mx="auto" maxW="7xl" pt="12" pb="5" px={{ base: '4', md: '8' }}>
+  <Box as="footer" role="contentinfo" mx="auto" pt="12" pb="5" px={{ base: '4', md: '8' }}>
     <Stack spacing="10" divider={<StackDivider />}>
       <Stack direction={{ base: 'column', lg: 'row' }} spacing={{ base: '10', lg: '28' }}>
         <Box flex="1">
