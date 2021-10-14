@@ -1,8 +1,6 @@
 import {
   Box,
   Stack,
-  Container,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import { ServiceText } from './ServiceText';
 import { ServiceTitle } from './ServiceTitle';
@@ -32,7 +30,7 @@ export default function SectionServices() {
       bgImage="url('/img/blobBottom.svg')"      
       >
       {/* <Container maxW={'7xl'} py={2} as={Stack} spacing={12}> */}
-        <ServiceTitle heading={'Somos especializados em'} text="" />
+        <ServiceTitle heading={'Áreas de Actuação'} text="" />
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}
@@ -41,8 +39,7 @@ export default function SectionServices() {
             <ServiceContent>
               <ServiceHeading>Marketing Digital</ServiceHeading>
               <ServiceText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Usamos diversas técnicas de Marketing Digital para criarmos uma boa relação e dar mais visibilidade e atrair mais clientes para o seu negócio!
               </ServiceText>
             <ServiceImage src='/img/marketing.svg' alt='Marketing Plans'/>
             </ServiceContent>
@@ -51,8 +48,8 @@ export default function SectionServices() {
             <ServiceContent>
               <ServiceHeading>Desenvolvimento Web</ServiceHeading>
               <ServiceText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Desenvolvemos websites modernos e com designers intuítivos...!
+                Desenvolvemos websites modernos!
               </ServiceText>
               <ServiceImage src='/img/webdev.svg' alt='Devices for web development'/>
             </ServiceContent>

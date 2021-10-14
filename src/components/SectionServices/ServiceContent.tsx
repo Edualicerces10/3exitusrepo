@@ -1,16 +1,21 @@
 import { ReactNode } from 'react'
 import { Stack, useColorModeValue } from '@chakra-ui/react'
 
-export const ServiceContent = ({ children }: { children: ReactNode }) => {
+interface ServiceProps {
+    children: ReactNode
+}
+
+export const ServiceContent = ({ children }: ServiceProps) => {
     return (
       <Stack
-        bg={useColorModeValue('gray.800','white')}
+        bg={useColorModeValue('white','gray.800')}
         boxShadow={'lg'}
         py={3}
         px={2}
         rounded={'xl'}
         align={'center'}
         pos={'relative'}
+        minH={430}
         >
         {children}
       </Stack>

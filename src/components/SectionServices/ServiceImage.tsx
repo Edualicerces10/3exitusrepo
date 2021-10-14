@@ -9,11 +9,11 @@ interface ImageProps {
 export const ServiceImage = ({ src, alt }: ImageProps) => {
     return(
         <Image
-        h="250"
-        w='100vw'
-        objectFit="contain"
-        src={src}
-        alt={alt}
+            h="250"
+            w='100vw'
+            objectFit="contain"
+            src={src}
+            alt={alt}
       />
     )
 }

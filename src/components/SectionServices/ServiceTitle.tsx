@@ -8,7 +8,12 @@ interface TitleProps {
 export const ServiceTitle = ({ heading, text}: TitleProps) => {
     return (
     <Stack spacing={0} align={'center'} >
-        <Heading>{heading}</Heading>
+        <Heading 
+            fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}
+            fontWeight='500'
+        >
+            {heading}
+        </Heading>
         <Text>{text}</Text>
     </Stack>
     )

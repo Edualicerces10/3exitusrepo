@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 
 export const ServiceText = ({ children }: { children: ReactNode }) => {
     return (
-      <Text
+        <Text
         textAlign={'center'}
-        color={useColorModeValue('gray.400','gray.600')}
-        fontSize={'sm'}>
+        fontSize={{ base: 'md', lg: 'lg', md: 'lg'}}
+        >
         {children}
       </Text>
     );
