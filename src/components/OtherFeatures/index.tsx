@@ -50,7 +50,7 @@ export default function OtherFeatures() {
               color={useColorModeValue("gray.600", "gray.400")}
               fontSize={{ md: "lg" }}
             >
-            Para melhro compressão do que fazemos, aprensentamos aqui em que podemos melhoras ou mudar o seu negócio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus necessitatibus architecto consectetur.
+            Para melhor compressão do que fazemos, aprensentamos aqui em que podemos melhoras ou mudar o seu negócio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus necessitatibus architecto consectetur.
             </chakra.p>
           </Box>
           <Box
