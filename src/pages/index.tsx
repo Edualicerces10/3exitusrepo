@@ -1,10 +1,10 @@
-import React from "react";
-import HeroSection  from "../components/Hero";
-import SectionFeactures from "../components/SectionFeatures";
-import SectionServices from "../components/SectionServices";
-
-
+import React from "react"
 import Head from 'next/head'
+
+import HeroSection  from "../components/Hero"
+import SectionServices from "../components/SectionServices"
+import { NewFeature } from "../components/NewFeatures"
+import OtherFeatures from "../components/OtherFeatures"
 
 export default function Home(){
   return (
@@ -14,7 +14,8 @@ export default function Home(){
         </Head>
         <HeroSection />
         <SectionServices />
-        <SectionFeactures />
+        <NewFeature />
+        <OtherFeatures  />
       </>
   )
 }

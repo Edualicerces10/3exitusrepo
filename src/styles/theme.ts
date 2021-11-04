@@ -15,8 +15,8 @@ export const theme = extendTheme({
         }
     },
     fonts: {
-        heading: 'Baloo Thambi 2',
-        body: 'Baloo Thambi 2',
+        heading: 'Poppins',
+        body: 'Poppins',
     },
     color: {
         'purple.600': '#5c0099',
