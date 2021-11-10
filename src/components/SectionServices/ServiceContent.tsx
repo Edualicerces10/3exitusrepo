@@ -9,7 +9,7 @@ export const ServiceContent = ({ children }: ServiceProps) => {
     return (
       <Stack
         bg={useColorModeValue('white','gray.800')}
-        boxShadow={'lg'}
+        boxShadow="dark-lg"
         py={3}
         px={2}
         rounded={'xl'}

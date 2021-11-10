@@ -10,12 +10,13 @@ export const Image = ({ src, alt }: ImageProps) => {
     return(
         <Box>
             <ChakraImage
-                objectFit={'cover'}
+                mt='-70'
+                objectFit={'contain'}
                 src={src}
                 alt={alt}
 
                 //w={{ base: "24px", md: "40px", lg: "750px" }}
-                w={"2xl"} 
+                w={"750px"} 
             />
         </Box>
     )

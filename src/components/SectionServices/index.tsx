@@ -39,7 +39,7 @@ export default function SectionServices() {
             <ServiceContent>
               <ServiceHeading>Marketing Digital</ServiceHeading>
               <ServiceText>
-                Usamos diversas técnicas de Marketing Digital para criarmos uma boa relação e dar mais visibilidade e atrair mais clientes para o seu negócio!
+                Usamos diversas técnicas de Marketing Digital para criarmos uma boa relação e dar mais visibilidade e atrair mais clientes para si!
               </ServiceText>
             <ServiceImage src='/img/marketing.svg' alt='Marketing Plans'/>
             </ServiceContent>
@@ -48,18 +48,16 @@ export default function SectionServices() {
             <ServiceContent>
               <ServiceHeading>Desenvolvimento Web</ServiceHeading>
               <ServiceText>
-                Desenvolvemos websites modernos e com designers intuítivos...!
-                Desenvolvemos websites modernos!
+                Utilizamos as melhores tecnologias para desenvolver sistemas e websites para melhorar o desempenho e crescimento do seu negócio.
               </ServiceText>
               <ServiceImage src='/img/webdev.svg' alt='Devices for web development'/>
             </ServiceContent>
           </Service>
           <Service>
             <ServiceContent>
-              <ServiceHeading>Desenvolvimento de Apps</ServiceHeading>
+              <ServiceHeading>Consultoria de Negócios</ServiceHeading>
               <ServiceText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Após vários anos de experiência de no mercado digital desenvolvemos uma consultoria especializada para ajudar pequenos e médios negócios a crescer.
               </ServiceText>
               <ServiceImage src='/img/mobdev.svg' alt='Devices for mobile development'/>
             </ServiceContent>
