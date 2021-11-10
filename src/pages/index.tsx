@@ -5,6 +5,7 @@ import HeroSection  from "../components/Hero"
 import SectionServices from "../components/SectionServices"
 import { NewFeature } from "../components/NewFeatures"
 import OtherFeatures from "../components/OtherFeatures"
+// import TestimonalSection from "../components/Testimonals"
 
 export default function Home(){
   return (
@@ -14,8 +15,9 @@ export default function Home(){
         </Head>
         <HeroSection />
         <SectionServices />
-        <NewFeature />
         <OtherFeatures  />
+        <NewFeature />
+        {/* <TestimonalSection /> */}
       </>
   )
 }
