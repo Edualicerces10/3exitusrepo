@@ -2,12 +2,12 @@ import {
     Tabs,
     TabList,
     Tab,
-    TabPanels,
-    TabPanel,
+    // TabPanels,
+    // TabPanel,
     Box,
 } from "@chakra-ui/react"
-import { Image } from "./Image"
-import { Text } from "./Text"
+// import { Image } from "./Image"
+// import { Text } from "./Text"
 
 export default function NewMarketing() {
     return (
@@ -21,7 +21,7 @@ export default function NewMarketing() {
                     <Tab _focus={{boxShadow: "none"}}>Design Gráfico</Tab> */}
                 </TabList>
             
-                <TabPanels>
+                {/* <TabPanels>
                     <TabPanel
                         display='flex'
                     >
@@ -60,7 +60,7 @@ export default function NewMarketing() {
                         />
                         <Text text="é a forma de apresentar o conteúdo e guiar o usuário para o próximo passo sem que ele se perca ou desista no caminho!" />
                     </TabPanel>
-                </TabPanels>
+                </TabPanels> */}
             </Tabs>
         </Box>
     )
