@@ -47,7 +47,7 @@ export default function NewMarketing() {
                     </TabPanel>
                     <TabPanel display='flex'>
                         <Image 
-                            src='/img/Investment.svg'
+                            src='/img/investmentdata.svg'
                             alt='marketing'
                         />
                         <Text text="é uma série de ações que ajudam a atingir os objetivos de sua empresa por meio de canais de marketing escolhidos e estudados profundamente com base em suas informações e no seu público-alvo!" />
