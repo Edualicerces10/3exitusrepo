@@ -63,13 +63,13 @@ import { motion } from 'framer-motion';
                 Criamos sua <Text color="#6B46C1" opacity="0.7"> experiência Digital </Text>
               </Text>
             </Heading>
-            <Text fontSize={{ base: 'md', lg: 'lg', md: 'md'}}>
+            <Text as='p' fontSize={{ base: 'md', lg: 'lg', md: 'md'}}>
             <Text
               color="#6B46C1"
               display="inline"
               fontWeight='700'
             >
-                3exitus
+                3Exitus
             </Text> a empresa que vai ajudar você e sua empresa a elevar o seu negócio, dando um ar mais moderno e profissional, vamos ajudar você ganhar uma posição no mundo digital.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
