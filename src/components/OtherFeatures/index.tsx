@@ -1,3 +1,5 @@
+import * as React from "react"
+
 import { Box, chakra, SimpleGrid, useColorModeValue } from "@chakra-ui/react"
 import DividerSections from "../DividerSections"
 import TabNewMarketing from "../TabNewMarketing"
