@@ -8,7 +8,7 @@ import {
     Stack,
     Text,
   } from '@chakra-ui/react';
-import BudgetButton from '../BadgetButton';
+{/*import BudgetButton from '../BadgetButton';*/}
 import DividerSections from '../DividerSections';
 import { motion } from 'framer-motion';
 
@@ -72,9 +72,10 @@ import { motion } from 'framer-motion';
                 3Exitus
             </Text> a empresa que vai ajudar você e sua empresa a elevar o seu negócio, dando um ar mais moderno e profissional, vamos ajudar você ganhar uma posição no mundo digital.
             </Text>
-            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+            {/*<Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
                 <BudgetButton />
             </Stack>
+            */}
           </Stack>
         </Flex>
         <Flex>
