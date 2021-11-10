@@ -45,7 +45,11 @@ export default function OtherFeatures() {
               fontSize={{ md: "lg" }}
               lineHeight={8}
             >
+<<<<<<< HEAD
             Para melhor compressão do que fazemos, aprensentamos aqui em que podemos melhoras ou mudar o seu negócio.
+=======
+            Para melhor compressão do que fazemos, aprensentamos aqui em que podemos melhoras ou mudar o seu negócio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus necessitatibus architecto consectetur.
+>>>>>>> 69c9ea667587b1ff310a00f61da750dbd3d3cb04
             </chakra.p>
 
             <Image
