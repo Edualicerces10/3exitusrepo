@@ -13,7 +13,7 @@ export default function TopContacts() {
           py="2"
           px={{ base: '3', md: '6', lg: '8' }}
           color="white"
-          bg="purple.600"
+          bg="purple.400"
         >
           <HStack spacing="3">
             {/* <Icon as={BellIcon} fontSize="2xl" h="10" /> */}
