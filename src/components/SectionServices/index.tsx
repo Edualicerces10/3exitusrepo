@@ -57,7 +57,7 @@ export default function SectionServices() {
             <ServiceContent>
               <ServiceHeading>Consultoria de Negócios</ServiceHeading>
               <ServiceText>
-                Após vários anos de experiência de no mercado digital desenvolvemos uma consultoria especializada para ajudar pequenos e médios negócios a crescer.
+                Após anos de experiência no mercado digital desenvolvemos uma consultoria especializada para ajudar pequenos e médios negócios a crescer.
               </ServiceText>
               <ServiceImage src='/img/mobdev.svg' alt='Devices for mobile development'/>
             </ServiceContent>
